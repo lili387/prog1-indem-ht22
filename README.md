@@ -1,5 +1,5 @@
 # Programmering 1 Indem VT22
-Se filstruktur för kodexempel från olika dagar.
+Se länkar nedan eler filstruktur för innehåll 
 
-## v05
-Intro till dictionaries och API [V05]](/v05)
+## Lektioner
+[V05](/v05) Intro till dictionaries och API 
