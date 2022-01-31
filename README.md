@@ -1,2 +1,2 @@
-# Programmering 1 indem VT22
+# Programmering 1 Indem VT22
 Se filstruktur för kodexempel från olika dagar.
