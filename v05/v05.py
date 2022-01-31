@@ -14,11 +14,14 @@ victor['name'] = 'Victor'
 victor['age'] = 23
 victor['has_children'] = False
 
-linus['vfu_studens'] = [victor, rafael]
+teachers = []
+teachers.append(linus)
+teachers.append(rafael)
+teachers.append(victor)
 
-teacher = []
-teacher.append(linus)
-teacher.append(rafael)
-teacher.append(victor)
+total_age = 0 
+for teacher in teachers:
+    total_age += teacher['age']
 
-print(teacher)
+print (f'Jösses {total_age} år!!!')
+print ('Jösses',total_age,'år!!!')
