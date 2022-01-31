@@ -1,2 +1,2 @@
-# prog1-indem-ht22
-Genomgångar kod ht22 
+# prog1-indem-vt22
+Se filstruktur för kodexempel från olika dagar.
