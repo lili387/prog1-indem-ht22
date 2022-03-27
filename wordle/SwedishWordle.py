@@ -11,7 +11,7 @@ class Game(object):
     def Start_new_game(self, word_length = 5):
         with open(os.path.join(sys.path[0], 'svenska-ord.json')) as json_file:
             self.swedish_words = json.load(json_file)
-        self.words_in_game = list(filter(lambda x: len(x)==word_length and "-" not in x, self.swedish_words))
+        self.words_in_game = list(filter(lambda x: len(x)==word_length and "-" not in x and " " not in x, self.swedish_words))
         self._word = random.choice(self.words_in_game)
         self.num_guesses = 0
 
@@ -24,10 +24,10 @@ class Game(object):
         self.num_guesses += 1
 
         if len(word_guess) != len(self._word):
-             raise ValueError(f"Du gissade {word_guess}, detta spel är om ord som är {len(self._word)} i längd")
+             raise ValueError(f"Felaktig längd på ord. Du gissade \"{word_guess}\". Detta spel är om ord som är {len(self._word)} i längd")
 
         if word_guess not in self.words_in_game:
-             raise ValueError(f"Du gissade {word_guess} vilket inte är ett ord i ordlistan")
+             raise ValueError(f"Felaktigt ord. Du gissade \"{word_guess}\" vilket inte är ett ord i ordlistan.")
 
         result = []
         for i,c in enumerate(word_guess):
