@@ -20,6 +20,6 @@ word_list_2 = read_dictionary_txt_as_list(swedish_dict_filename_2)
 
 unique_words = []
 
-for i,word1 in enumerate(word_list_1):
+for word1 in word_list_1:
     if not word1 in word_list_2:
         unique_words.append(word1)
